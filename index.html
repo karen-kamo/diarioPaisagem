@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário da Paisagem</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+</head>
+
+<body>
+
+  <nav data-menu="suave">
+    <ul class="menu">
+      <li> <a href="#inicio">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+          </svg>
+        </a> </li>
+      <li> <a href="#subRes">Resumo</a> </li>
+      <li> <a href="#subObj">Objetivos</a> </li>
+      <li> <a href="#subMet"> Metodologia</a> </li>
+      <li> <a href="#subDef">Definição</a> </li>
+      <li> <a href="#subMat">Materias</a> </li>
+      <li> <a href="#subCon">Conclusão</a> </li>
+      <li> <a href="sobre.html">Sobre</a> </li>
+    </ul>
+  </nav>
+
+  <header class="header" id="inicio">
+    <h1 class="tit1"> - Diário da paisagem - </h1>
+    <br>
+    <h1 class="tit2">Contraste do ser humano com a natureza</h1>
+  </header>
+
+  <div id="subRes"> </div>
+  <div id="subObj"> </div>
+  <div id="subMet"> </div>
+
+  <article class="tab">
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1" class="tab-sub">Resumo</a></li>
+        <li><a href="#tabs-2" class="tab-sub">Objetivos</a></li>
+        <li><a href="#tabs-3" class="tab-sub">Metodologia</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi
+          sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus
+          auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
+          Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius
+          sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      </div>
+      <div id="tabs-2">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+          Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut
+          tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+          Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean
+          vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus
+          pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur
+          tortor et purus.</p>
+      </div>
+      <div id="tabs-3">
+        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
+          accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel
+          enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+          nec, feugiat nec, luctus a, lacus.</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
+          facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec
+          mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam
+          scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor,
+          tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque
+          nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+      </div>
+    </div>
+  </article>
+
+  <center>
+    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-signpost icone"
+      viewBox="0 0 16 16" id="subDef">
+      <path
+        d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0zM12.532 5l1.666 2-1.666 2H2V5h10.532z" />
+    </svg>
+  </center>
+
+  <main>
+    <section class="slider">
+      <div class="seta arrow-left"><i class="fas fa-chevron-circle-left" style="color: #000000;"></i></div>
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              Segundo os pensamentos de Immanuel Kant, a definição de paisagem pode ser compreendida como uma
+              representação subjetiva da natureza percebida pelo sujeito. Para Kant, a paisagem não é uma realidade
+              objetiva, mas sim uma construção mental que envolve a combinação de elementos naturais e a percepção
+              individual de quem a observa.
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              De acordo com o filósofo, a paisagem é uma síntese entre o mundo objetivo e as faculdades cognitivas do
+              sujeito. Ele argumenta que nossa experiência da paisagem é mediada pela percepção sensorial e pela
+              capacidade de raciocínio, onde o sujeito organiza e interpreta os dados sensoriais para formar uma
+              representação coerente do ambiente natural. Além disso, o alemão destaca que a paisagem é uma expressão da
+              beleza e da estética. Ele defende que a apreciação estética da natureza está relacionada à capacidade
+              humana de julgamento e de atribuir valor estético aos fenômenos naturais. Assim, a paisagem é considerada
+              um objeto de contemplação estética, que desperta emoções e sentimentos no sujeito.
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              A percepção da paisagem é subjetiva e varia de pessoa para pessoa, pois cada indivíduo atribui
+              significados diferentes aos elementos que compõem a paisagem. Ela pode causar emoções, memórias e
+              experiências pessoais, e influenciar a forma como as pessoas se relacionam com o ambiente ao seu redor.
+              Portanto, com base nos pensamentos de Kant, a paisagem pode ser entendida como uma construção subjetiva
+              que combina elementos objetivos da natureza com a percepção individual do sujeito, envolvendo a apreciação
+              estética e a experiência do sublime. É uma manifestação da relação entre o mundo exterior e o mundo
+              interior do observador, refletindo a interação entre a natureza e a subjetividade humana.
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              No conceito da Geografia, a paisagem é uma categoria fundamental para compreender e analisar o espaço
+              geográfico. A paisagem geográfica é definida como a porção visível do território, composta por elementos
+              naturais, como relevo, clima, vegetação e recursos hídricos, e elementos humanos, como edificações,
+              estradas, agricultura, indústria e outros aspectos da intervenção humana.
+              A paisagem é entendida como um produto resultante da interação dinâmica entre a natureza e a sociedade,
+              refletindo as características físicas, culturais, econômicas e históricas de determinada região. Ela é
+              influenciada pela ação humana e, por sua vez, influencia as atividades e a vida das pessoas que a habitam.
+
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              A análise da paisagem geográfica envolve a identificação e a interpretação dos elementos presentes, bem
+              como a compreensão dos processos que moldaram e transformaram a paisagem ao longo do tempo. Através dessa
+              abordagem, os geógrafos podem estudar os padrões espaciais, as relações sociais, econômicas e culturais,
+              além dos impactos ambientais decorrentes da atividade humana. É importante ressaltar que a paisagem
+              geográfica não é estática, mas sim dinâmica, sujeita a constantes transformações e evoluções.
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="slider-caixa">
+        <article class="conteudo-def">
+          <div class="caixa">
+            <p>
+              Mudanças na paisagem podem ocorrer tanto de forma natural, através de processos geológicos, climáticos e
+              ecológicos, quanto de forma antrópica, como resultado das ações e intervenções humanas. Através da análise
+              da paisagem, os geógrafos buscam compreender as relações espaciais, sociais e culturais, contribuindo para
+              a compreensão dos fenômenos que ocorrem no espaço geográfico.
+              Em resumo, a paisagem é a representação não só visual mas também perceptível dos elementos naturais e
+              humanos presentes em um determinado espaço. Ela reflete a interação entre a natureza e a sociedade, e
+              desempenha um papel importante na identidade de um lugar, nas relações espaciais e na compreensão das
+              dinâmicas do ambiente geográfico.
+
+            </p>
+          </div>
+          <h2 class="sub-def">
+            < Definição </h2>
+        </article>
+      </div>
+
+      <div class="seta arrow-right"><i class="fas fa-chevron-circle-right" style="color: #000000;"></i></div>
+      <div class="paginacao">
+
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+        <div class="botao"> <i class="far fa-circle" style="color: #000000;"></i> </div>
+      </div>
+
+    </section><!--slider-->
+
+    <center>
+      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-signpost icone"
+        viewBox="0 0 16 16" id="subMat">
+        <path
+          d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0zM12.532 5l1.666 2-1.666 2H2V5h10.532z" />
+      </svg>
+    </center>
+
+    <h2 class="sub"> Materiais </h2>
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img1.jpeg"><img src="images/img1.jpeg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img2.jpeg"><img src="images/img2.jpeg"></a>
+      </div>
+
+      <div class="introducao2">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao2">Clique na imagem para ampliar!</a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img3.jpeg"><img src="images/img3.jpeg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img4.jpeg"><img src="images/img4.jpeg"></a>
+      </div>
+
+      <div class="introducao2">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao2">Clique na imagem para ampliar!</a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img5.jpeg"><img src="images/img5.jpeg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img6.jpg"><img src="images/img6.jpg"></a>
+      </div>
+
+      <div class="introducao2">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao2">Clique na imagem para ampliar!</a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img7.jpeg"><img src="images/img7.jpeg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img8.jpeg"><img src="images/img8.jpeg"></a>
+      </div>
+
+      <div class="introducao2">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao2">Clique na imagem para ampliar!</a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img9.jpeg"><img src="images/img9.jpeg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img10.jpeg"><img src="images/img10.jpeg"></a>
+      </div>
+
+      <div class="introducao2">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao2">Clique na imagem para ampliar!</a>
+      </div>
+    </article>
+    
+    <article class="conteudo" aria-labelledby="label-introducao">
+      <div class="introducao1">
+        <h1 id="label-introducao">Imagem Tal</h1>
+        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios
+          da marca.</p>
+        <a class="botao1">Clique na imagem para ampliar!</a>
+      </div>
+      <div class="introducao-cover">
+        <a data-fancybox="gallery" href="images/img11.jpg"><img src="images/img11.jpg"></a>
+      </div>
+    </article>
+
+    <article class="conteudo conteudo-audio">
+      <h2 class="subtitulo" id="label-audio">Coloque o fone e aproveite</h2>
+      <ul class="audio">
+        <li class="audio-item">
+          <h3>Nome Áudio</h3>
+          <audio autoplay="autoplay" controls="controls">
+            <source src="audios/obra-passaros.mp3" type="audio/mp3" />
+            seu navegador não suporta HTML5
+          </audio>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </li>
+        <li class="audio-item">
+          <h3>Nome Áudio</h3>
+          <audio autoplay="autoplay" controls="controls">
+            <source src="audios/audio_cidade.mp3" type="audio/mp3" />
+            seu navegador não suporta HTML5
+          </audio>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </li>
+        <li class="audio-item">
+          <h3>Nome Áudio</h3>
+          <audio autoplay="autoplay" controls="controls">
+            <source src="audios/pessoas-moto-editado.mp3" type="audio/mp3" />
+            seu navegador não suporta HTML5
+          </audio>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </li>
+        <li class="audio-item">
+          <h3>Nome Áudio</h3>
+          <audio autoplay="autoplay" controls="controls">
+            <source src="audios/pessoas.mp3" type="audio/mp3" />
+            seu navegador não suporta HTML5
+          </audio>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </li>
+        <li class="audio-item">
+          <h3>Nome Áudio</h3>
+          <audio autoplay="autoplay" controls="controls">
+            <source src="audios/tudo.mp3" type="audio/mp3" />
+            seu navegador não suporta HTML5
+          </audio>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s</p>
+        </li>
+      </ul>
+    </article>
+
+    <article class="conteudo2">
+      <div class="caixa">
+        <p>
+          Ao implementar o trabalho foi constatado que muitas coisas, devido talvez a vida corriqueira, passam
+          despercebidas pela nossa percepção. Durante a realização da atividade, direcionando o foco para a paisagem ao
+          nosso redor, passamos a perceber melhor como funciona a relação de convivência em nosso ambiente, dando ênfase
+          naquilo que pode até ser importante, porém, não percebemos durante o cotidiano. Essa falta de percepção do
+          nosso redor pode afetar drasticamente não só nossa vida, mas de todo uma biodiversidade.
+
+        </p>
+      </div>
+
+      <h2 id="subCon" class="sub-con">
+        < Conclusão </h2>
+    </article>
+  </main>
+
+  <footer class="rodape">
+    <p>Copyright © 2023 Todos os Direitos Reservados.</p>
+  </footer>
+
+  <script src="animacoes.js">
+  </script>
+</body>
+
+</html>
