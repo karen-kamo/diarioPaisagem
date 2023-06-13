@@ -40,7 +40,7 @@ nav {
   font-size: 2rem;
   text-transform: uppercase;
   padding: 13rem 0 10rem 0;
-  background-image: url("./images/img1.jpeg");
+  background-image: url("img1.jpeg");
   background-size: cover; 
 }
 
@@ -105,7 +105,7 @@ p {
   align-self: center;
 }
 
-.caixa p{
+.caixa p, .tab p{
   text-align: justify;
   text-indent: 2rem;
 }
@@ -296,8 +296,12 @@ p {
 }
 
 .sobre-main img {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
+}
+
+.sobre-main div{
+  margin-bottom: 5rem;
 }
 
 .sobre-main p {
